@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header {
+    background-color: #0E0E0E;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo :hover{
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 10px;
+}
+
+nav > ul > li {
+    margin-left: 20px;
+}
+
+nav > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+}
+nav > ul > li > a:hover {
+    transform: scale(1.1);
+    background-color: #262626;
+    border-radius: 5%;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    display: flex;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+    justify-content: center;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-card {
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.category-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: orange;
+}
+
+.category-card p {
+    font-size: 0.9em;
+    color: rgb(69, 69, 69);
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #151515;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+@media screen and (max-width:767px){
+
+    footer{
+        position: relative;
+    }
+}
